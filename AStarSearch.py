@@ -94,7 +94,6 @@ def AStarSearch(nodes, startNode, endNode):
 
         closeList.append(currentNode)
         currentNode = openList.pop()
-Z
 
 def Result(nodes, startNode, endNode):
     routeList = []
@@ -116,6 +115,7 @@ def Result(nodes, startNode, endNode):
     
     print("Optimal route: " + route)
     print("Total cost: "  + str(totalCost))
+    input("Press Enter to exit...")
 
 nodes = []
 
