@@ -13,7 +13,7 @@ class Node:
         self.hValue = 0
         self.fValue = 0
 
-class OpenList(object): #Modified for Node with fValue as priority
+class OpenList(object):
     def __init__(self):
         self.queue = []
   
@@ -94,50 +94,7 @@ def AStarSearch(nodes, startNode, endNode):
 
         closeList.append(currentNode)
         currentNode = openList.pop()
-
-nodes = [
-    Node('A', 0, 0),
-    Node('B', 5, 0),
-    Node('C', 2, 2),
-    Node('D', 3, 4),
-    Node('E', 5, 5)
-]
-
-# #A
-# nodes[0].neighbors = [nodes[1], nodes[3]]
-# nodes[0].neighborsDistance = [7, 6]
-
-# #B
-# nodes[1].neighbors = [nodes[0], nodes[2], nodes[4]]
-# nodes[1].neighborsDistance = [7, 5, 10]
-
-# #C
-# nodes[2].neighbors = [nodes[1], nodes[4]]
-# nodes[2].neighborsDistance = [5, 5]
-
-# #D
-# nodes[3].neighbors = [nodes[0], nodes[4]]
-# nodes[3].neighborsDistance = [6, 4]
-
-# #E
-# nodes[4].neighbors = [nodes[2], nodes[3]]
-# nodes[4].neighborsDistance = [5, 4]
-
-# AStarSearch(nodes, nodes[0], nodes[2])
-
-# nodesAmount = int(input("Enter node amount: "))
-
-# while(nodesAmount > 0):
-#     nodesAmount -= 1
-#     nodeName = input("Enter node name: ")
-#     xCor, yCor = map(int, input("Enter x and y coordinate (seperate by space): ").split())
-
-#     nodes.append(Node(nodeName, xCor, yCor))
-
-
-# rulesAmount = input("Enter rules amount: ")
-# while(rulesAmount > 0):
-#     rulesAmount = input("Enter ")
+Z
 
 def Result(nodes, startNode, endNode):
     routeList = []
